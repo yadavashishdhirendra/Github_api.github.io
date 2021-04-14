@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Search User</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+
+        input[type="text"] {
+            border: 3px solid red;
+            border-radius: 15px;
+            outline: none !important;
+            box-shadow: none !important;
+        }
+        #result a{
+            text-decoration: none !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <br><br>
+        <h1 style="text-align: center;font-family: 'Dela Gothic One', cursive;">Github User Search API</h1>
+        <br><br>
+        <form id="myform" autocomplete="off">
+            <div class="form-group">
+                <input type="text" id="search" placeholder="Search Username" class="form-control" required>
+            </div>
+            <div class="form-group text-center">
+                <button class="btn btn-danger">Search User</button>
+            </div>
+        </form>
+        <div id="result" style="text-align: center;"></div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
